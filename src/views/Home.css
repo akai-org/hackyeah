@@ -16,4 +16,5 @@
 .home-view img,
 .company-view img {
   max-width: 150px;
+  margin: 0 20px;
 }
