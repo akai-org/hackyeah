@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-const Box = () => (
+const Box = (props) => (
   <div className="box">
-    BOX
+    {props.name}: {props.children}
   </div>
 );
 
