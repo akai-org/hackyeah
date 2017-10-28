@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
 import Box from '../components/Box';
+import Header from '../components/Header';
 
 const Home = () => (
   <div>
+    <Header></Header>
     <Box variant="fullwidth">
       <h2>With yours help we founded 10.000 meals</h2>
       <div>

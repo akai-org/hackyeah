@@ -2,11 +2,15 @@
   text-align: center;
   background-color: #d13140;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
   color: white;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 /*
@@ -16,7 +20,22 @@
 }
 */
 
-.fullWidth {
+.Box.fullwidth {
+  width: 100%;
+}
+
+.Box:not(.fullWidth) {
+}
+
+.fullwidth h2 {
+  width: 100%;
+}
+
+.fullwidth div {
+  width: 150px;
+}
+
+.fullwidth footer {
   width: 100%;
 }
 
