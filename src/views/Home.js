@@ -20,22 +20,47 @@ const Home = () => (
       </div>
       <footer>Thank you very much</footer>
     </Box>
-    <Box>
-      <h2>Share your foods</h2>
-      <img src="http://via.placeholder.com/250x250" alt="" />
-      <p>With us you can share foods with people in need.</p>
+    <Box variant="flexible color-a" >
+      <header className="Box-header">
+        <h2>Share your foods</h2>
+      </header>
+      <main className="Box-content">
+        <img src="http://via.placeholder.com/250x250" alt="" />
+        <p>With us you can share foods with people in need.</p>
+      </main>
+      <footer className="Box-footer">
+          <div className="Box-button">Box button</div>
+          <div className="Box-button">Box button</div>
+      </footer>
     </Box>
-    <Box>
-      <h2>Share your clothes</h2>
-      <img src="http://via.placeholder.com/250x250" alt="" />
-      <p>Or relay your unused clothes.</p>
+    <Box variant="flexible color-b">
+      <header className="Box-header">
+        <h2>Share your clothes</h2>
+      </header>
+      <main className="Box-content">
+        <img src="http://via.placeholder.com/250x250" alt="" />
+        <p>Or relay your unused clothes.</p>
+      </main>
+      <footer className="Box-footer">
+          <div className="Box-button">Box button</div>
+          <div className="Box-button">Box button</div>
+      </footer>
     </Box>
-    <Box>
+    <Box variant="flexible color-c">
+    <header className="Box-header">
       <h2>Our community needs yours support</h2>
+      </header>
+      <main className="Box-content">
       <img src="http://via.placeholder.com/250x250" alt="" />
-      <p>Together we can make the world better place.</p>
+      <p>Together we can make the world better. </p>
+      </main>
+      <footer className="Box-footer">
+          <div className="Box-button">Box button</div>
+          <div className="Box-button">Box button</div>
+      </footer>
     </Box>
   </div>
 );
+
 
 export default Home;

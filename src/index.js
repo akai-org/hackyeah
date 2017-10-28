@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import 'normalize.css/normalize.css';
 import './index.css';
-import App from './App';
+//import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 import Header from './components/Header';

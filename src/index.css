@@ -3,3 +3,12 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+[id=root] {
+  background: linear-gradient(#3d486b, #2f3753);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: #fff;
+  min-height: 100vh;
+}

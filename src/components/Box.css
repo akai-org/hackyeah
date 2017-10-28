@@ -1,0 +1,87 @@
+.Box {
+  text-align: center;
+  background-color: #d13140;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  color: white;
+}
+
+/*
+.Box-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+*/
+
+.fullWidth {
+  width: 100%;
+}
+
+.flexible {
+  width: 30%;
+  display: inline-block;
+}
+
+.color-a {
+  background-color: #d13140;
+  margin: 0 1% 0 3%;
+}
+
+.color-b {
+  background-color: #21cdfc;
+  margin: 0 1% 0 1%;
+}
+
+.color-c {
+  background-color: #fda82c;
+  margin: 0 3% 0 1%;
+}
+
+.Box-header {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  flex-grow: 3;
+  order: 1;
+}
+
+.Box-content {
+  width: 100%;
+  flex-grow: 5;
+  order: 2;
+}
+
+.Box-image {
+  font-size: 1.5em;
+}
+
+.Box-footer {
+  display: flex;
+  width: 100%;
+  order: 3;
+  flex-grow: 1;
+}
+
+.Box-footer .Box-button {
+  background-color: #c02029;
+  width: 50%;
+}
+
+.Box-footer .Box-button:nth-child(1) {
+  margin-right: 2px;
+  border-radius: 0 0 0 10px;
+}
+
+.Box-footer .Box-button:nth-child(2) {
+  margin-left: 2px;
+  border-radius: 0 0 10px 0;
+}
+
+@keyframes Box-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
