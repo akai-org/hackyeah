@@ -1,1 +1,1 @@
-* Hackathon HackYeak 28.10.2017
+* Hackathon HackYeah 28.10.2017
