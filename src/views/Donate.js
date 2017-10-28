@@ -7,7 +7,7 @@ import Box from '../components/Box';
 const Donate = () => (
   <div className="donate-view">
     <Header/>
-    <Box variant="flexible color-a" >
+    <Box variant="small color-a" >
       <header className="Box-header">
         <h2>Share your foods</h2>
       </header>

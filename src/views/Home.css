@@ -1,4 +1,4 @@
-.home-view {
+.home-view, .company-view {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
