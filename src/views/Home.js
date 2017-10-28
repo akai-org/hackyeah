@@ -30,7 +30,7 @@ const Home = () => (
         <h2>Share your foods</h2>
       </header>
       <main className="Box-content">
-        <img src="http://via.placeholder.com/250x250" alt="" />
+        <img src="/images/food.png" alt="" />
         <p>With us you can share foods with people in need.</p>
       </main>
       <footer className="Box-footer">
@@ -43,7 +43,7 @@ const Home = () => (
         <h2>Share your clothes</h2>
       </header>
       <main className="Box-content">
-        <img src="http://via.placeholder.com/250x250" alt="" />
+        <img src="/images/clothes.png" alt="" />
         <p>Or relay your unused clothes.</p>
       </main>
       <footer className="Box-footer">
@@ -56,13 +56,33 @@ const Home = () => (
       <h2>Our community needs yours support</h2>
       </header>
       <main className="Box-content">
-      <img src="http://via.placeholder.com/250x250" alt="" />
+      <img src="/images/money.png" alt="" />
       <p>Together we can make the world better. </p>
       </main>
       <footer className="Box-footer">
           <div className="Box-button">Box button</div>
       </footer>
     </Box>
+
+
+    <Box variant="fullwidth">
+      <h2>With yours help we founded 10.000 meals</h2>
+      <div>
+        <img src="http://via.placeholder.com/125x125" alt="" />
+        <p>10.000 meals</p>
+      </div>
+      <div>
+        <img src="http://via.placeholder.com/125x125" alt="" />
+        <p>2.500 fed people</p>
+      </div>
+      <div>
+        <img src="http://via.placeholder.com/125x125" alt="" />
+        <p>600.000 relayed clothes</p>
+      </div>
+      <footer>Thank you very much</footer>
+    </Box>
+
+    <div></div>
 
   </div>
 );
