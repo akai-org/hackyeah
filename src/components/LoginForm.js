@@ -30,6 +30,27 @@ const LoginForm = (props) => (
         </form>
       </div>
     </Box>
+    <div className="m-t-10">
+      <Box>
+        <div className="account-info-container">
+          <div className="account-info-box">
+            <h4>Company Account</h4>
+            <p>Login: companyUser</p>
+            <p>Password: companyPassword</p>
+          </div>
+          <div className="account-info-private account-info-box">
+            <h4>Private Account</h4>
+            <p>Login: privateUser</p>
+            <p>Password: privatePassword</p>
+          </div>
+          <div className="account-info-box">
+            <h4>Organization Account</h4>
+            <p>Login: organizationUser</p>
+            <p>Password: organizationPassword</p>
+          </div>
+        </div>
+      </Box>
+    </div>
   </div>
 );
 

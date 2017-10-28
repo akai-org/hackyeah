@@ -49,13 +49,26 @@
   background: linear-gradient(#d13140, #a02029);
 }
 
+.color-a .Box-footer .Box-button {
+  color: #d13140;
+}
+
 .color-b {
   background: linear-gradient(#21cdfc, #00abdb);
+}
+
+.color-b .Box-footer .Box-button {
+  color: #21cdfc;
 }
 
 .color-c {
   background: linear-gradient(#fda82c, #ca971b);
 }
+
+.color-c .Box-footer .Box-button {
+  color: #fda82c;
+}
+
 
 .Box-header {
   width: 100%;
@@ -87,13 +100,29 @@
   height: 30px;
   line-height: 30px;
   margin: 0 auto;
+
+  box-shadow: 0 9px 0 rgba(0,0,0, .3);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(222, 222, 222, 1);
+  top:0;
+  transition: all .3s;
+  border: none;
+  outline: none;
+}
+
+
+.Box-footer .Box-button:active{
+    box-shadow: 0 4px 0 rgba(0,0,0, .3);
+    top:8px;
 }
 
 .Box-footer .Box-button:hover{
   cursor: pointer;
-  animation: button-darken 0.7s;
-  background-color: rgba(0,0,0, 0.3);
-  border: 2px solid rgba(0, 0, 0, 0.0);
+  background-color: white;
 }
 
 img {

@@ -21,7 +21,7 @@ const Home = () => (
         <p>With us you can share foods with people in need.</p>
       </main>
       <footer className="Box-footer">
-          <div className="Box-button">Box button</div>
+          <div className="Box-button">daj hajs</div>
       </footer>
     </Box>
 
