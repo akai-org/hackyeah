@@ -7,6 +7,7 @@ import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
 import Home from './views/Home';
+import Clothes from './views/Clothes';
 import Login from './views/Login';
 import NotFound from './views/NotFound';
 
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Route exact path='/' component={Home}/>
       <Route path='/magic' component={Home}/>
       <Route path="/login" component={Login} />
+      <Route path="/clothes" component={Clothes} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>,
