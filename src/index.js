@@ -9,6 +9,7 @@ import registerServiceWorker from './registerServiceWorker';
 import Home from './views/Home';
 import Clothes from './views/Clothes';
 import Login from './views/Login';
+import Company from './views/Company';
 import NotFound from './views/NotFound';
 
 ReactDOM.render(
@@ -18,6 +19,7 @@ ReactDOM.render(
       <Route path='/magic' component={Home}/>
       <Route path="/login" component={Login} />
       <Route path="/clothes" component={Clothes} />
+      <Route path="/company" component={Company} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>,
