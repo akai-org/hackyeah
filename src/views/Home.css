@@ -12,3 +12,7 @@
   text-decoration: none;
   text-transform: lowercase;
 }
+
+.home-view img {
+  max-width: 150px;
+}

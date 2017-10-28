@@ -1,9 +1,11 @@
 .Header {
   display: flex;
-  justify-content: space-between ;
-  max-width: 960px;
+  justify-content: space-between;
+  width: 100%;
   margin: 0 auto;
   padding: 20px 0;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 .Header > h1 {
