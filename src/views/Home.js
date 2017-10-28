@@ -24,7 +24,7 @@ const Home = () => (
       </footer>
     </Box>
 
-    <Box variant="small color-a" >
+    <Box variant="small color-d" >
       <header className="Box-header">
         <h2>Share your foods</h2>
       </header>
@@ -71,7 +71,7 @@ const Home = () => (
       </footer>
     </Box>
 
-    <Box variant="large">
+    <Box variant="large color-b">
       <h2>With yours help we founded 10.000 meals</h2>
       <div>
         <img src="http://via.placeholder.com/125x125" alt="" />
@@ -105,7 +105,7 @@ const Home = () => (
       </footer>
     </Box>
 
-    <Box variant="small color-c">
+    <Box variant="small color-a">
       <header className="Box-header">
         <h2>Zgłoś organizację</h2>
       </header>
@@ -122,7 +122,7 @@ const Home = () => (
       </footer>
     </Box>
 
-    <Box variant="small color-c">
+    <Box variant="small color-d">
       <header className="Box-header">
         <h2>Chcesz dorzucić swoją cegiełkę?</h2>
       </header>
@@ -139,7 +139,7 @@ const Home = () => (
       </footer>
     </Box>
 
-    <Box variant="medium color-a">
+    <Box variant="medium color-c">
     <header className="Box-header">
       <h2>Our community needs yours support</h2>
       </header>
@@ -156,7 +156,7 @@ const Home = () => (
       </footer>
     </Box>
 
-    <Box variant="small color-c">
+    <Box variant="small color-d">
       <header className="Box-header">
         <h2>Chcesz dorzucić swoją cegiełkę?</h2>
       </header>
