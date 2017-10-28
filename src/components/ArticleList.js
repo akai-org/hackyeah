@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import ArticleItemList from './ArticleItemList';
+import './ArticleList.css';
 
 class ArticleList extends Component {
   constructor(props) {
@@ -18,11 +19,18 @@ class ArticleList extends Component {
       this.articleList.push(<ArticleItemList article={this.props.articles[i]} key={i}></ArticleItemList>)
     }
   }
-
   
   render() {
     return (
-      <div>{this.articleList}</div>
+      <div>
+        <div className="header-list header-border">
+          <div>Date</div>
+          <div>Article type</div>
+          <div>Value</div>
+          <div>Name/Description</div>
+        </div>
+        <div>{this.articleList}</div>
+      </div>
     );
   }
 }

@@ -24,7 +24,7 @@ class ArticleItemList extends Component {
 
   getMoneyRow(article) {
     return (
-      <div>
+      <div className="list-row row-border">
         <div>
           <FormattedDate
             value={article.date}
@@ -40,7 +40,7 @@ class ArticleItemList extends Component {
 
   getFoodRow(article) {
     return (
-      <div>
+      <div className="list-row row-border">
         <div>
           <FormattedDate
             value={article.date}
@@ -57,7 +57,7 @@ class ArticleItemList extends Component {
 
   getClothesRow(article) {
     return (
-      <div>
+      <div className="list-row row-border">
         <div>
           <FormattedDate
             value={article.date}
