@@ -156,6 +156,23 @@ const Home = () => (
       </footer>
     </Box>
 
+    <Box variant="small color-c">
+      <header className="Box-header">
+        <h2>Chcesz dorzucić swoją cegiełkę?</h2>
+      </header>
+      <main className="Box-content">
+        <img src="/images/money.png" alt="" />
+        <p>
+          ...
+        </p>
+      </main>
+      <footer className="Box-footer">
+        <div className="Box-button">
+          <a href="#">Zgłoś</a>
+        </div>
+      </footer>
+    </Box>
+
     <Footer></Footer>
 
   </div>
