@@ -30,7 +30,7 @@ const Home = () => (
       </footer>
     </Box>
 
-    <Box variant="small color-a" >
+    <Box variant="small color-d" >
       <header className="Box-header">
         <h2>Share your foods</h2>
       </header>
@@ -73,7 +73,7 @@ const Home = () => (
       <footer className="Box-footer">
         <div className="Box-button">
           <Link to='/donate'>
-            Learn more
+            Help this way!
           </Link>
         </div>
       </footer>
@@ -98,7 +98,7 @@ const Home = () => (
       </footer>
     </Box>
 
-    <Box variant="small color-c">
+    <Box variant="small color-a">
       <header className="Box-header">
         <h2>Zgłoś organizację</h2>
       </header>
@@ -115,7 +115,7 @@ const Home = () => (
       </footer>
     </Box>
 
-    <Box variant="small color-c">
+    <Box variant="small color-d">
       <header className="Box-header">
         <h2>Chcesz dorzucić swoją cegiełkę?</h2>
       </header>
@@ -132,7 +132,7 @@ const Home = () => (
       </footer>
     </Box>
 
-    <Box variant="medium color-a">
+    <Box variant="medium color-c">
     <header className="Box-header">
       <h2>Our community needs yours support</h2>
       </header>
@@ -149,7 +149,7 @@ const Home = () => (
       </footer>
     </Box>
 
-    <Box variant="small color-c">
+    <Box variant="small color-d">
       <header className="Box-header">
         <h2>Chcesz dorzucić swoją cegiełkę?</h2>
       </header>
