@@ -20,20 +20,20 @@ const Home = () => (
       </div>
       <footer>Thank you very much</footer>
     </Box>
-    <Box name="abc" >
+    <Box>
       <h2>Share your foods</h2>
       <img src="http://via.placeholder.com/250x250" alt="" />
       <p>With us you can share foods with people in need.</p>
     </Box>
-    <Box name="abc">
+    <Box>
       <h2>Share your clothes</h2>
       <img src="http://via.placeholder.com/250x250" alt="" />
       <p>Or relay your unused clothes.</p>
     </Box>
-    <Box name="abc">
+    <Box>
       <h2>Our community needs yours support</h2>
       <img src="http://via.placeholder.com/250x250" alt="" />
-      <p>Together we can make the world better. </p>
+      <p>Together we can make the world better place.</p>
     </Box>
   </div>
 );
