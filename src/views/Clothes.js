@@ -59,7 +59,7 @@ const Clothes = () => (
   <div className="home-view">
     <Header></Header>
 
-    <Box variant="fullwidth color-b">
+    <Box variant="large color-b">
       <header className="Box-header">
         <h2>Let your wardrobe breath and help others!</h2>
       </header>
@@ -74,7 +74,7 @@ const Clothes = () => (
       </main>
     </Box>
 
-    <Box variant="fullwidth color-a map">
+    <Box variant="large color-a map">
       <MyMapComponent isMarkerShown />
     </Box>
 

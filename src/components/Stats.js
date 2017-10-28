@@ -20,7 +20,7 @@ $( document ).ready(function() {
 });
 
 const Stats = (props) => (
-  <Box variant="fullwidth">
+  <Box variant="large">
     <h2>With yours help we founded <span className="count">10000</span> meals</h2>
     <div>
       <img src="http://via.placeholder.com/125x125" alt=""/>

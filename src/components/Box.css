@@ -20,31 +20,37 @@
 }
 */
 
-.Box.fullwidth {
+.large {
   width: 100%;
   flex-direction: row;
   grid-column-start: 1;
   grid-column-end: 4;
 }
 
-.flexible {
+.small {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
 }
 
-.fullwidth h2 {
+.medium {
+  flex-direction: row;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.large h2 {
   width: 100%;
 }
 
-.fullwidth div {
+.large div {
   min-width: 150px;
 }
 .map > div {
   width: 100%;
 }
 
-.fullwidth footer {
+.large footer {
   width: 100%;
 }
 
@@ -52,7 +58,7 @@
   background: linear-gradient(#d13140, #a02029);
 }
 
-.color-a .Box-footer .Box-button {
+.color-a .Box-footer .Box-button a, .color-a .Box-footer .Box-button {
   color: #d13140;
 }
 
@@ -60,7 +66,7 @@
   background: linear-gradient(#21cdfc, #00abdb);
 }
 
-.color-b .Box-footer .Box-button {
+.color-b .Box-footer .Box-button a, .color-b .Box-footer .Box-button {
   color: #21cdfc;
 }
 
@@ -68,8 +74,16 @@
   background: linear-gradient(#fda82c, #ca971b);
 }
 
-.color-c .Box-footer .Box-button {
+.color-c .Box-footer .Box-button a, .color-c .Box-footer .Box-button a {
   color: #fda82c;
+}
+
+.color-d {
+  background: linear-gradient(#4dbc81, #53a378);
+}
+
+.color-d .Box-footer .Box-button a, .color-d .Box-footer .Box-button a {
+  color: #4dbc81;
 }
 
 
