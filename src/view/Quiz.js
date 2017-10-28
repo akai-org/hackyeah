@@ -16,12 +16,12 @@ class Quiz extends Component {
         return response.json();
       })
       .then( (response) => {
-        let newState = { question: response.question, image: response.image, answers: [] };
+        let newState = { question: response.question, image: response.image, answerName: [], answerImages: [] };
         for(const i in response.answers){
           console.log(i);
-          newState.answers.push(response.answers[i]);
+          newState.answerName.push( response.answers[i].name );
+          newState.answerImages.push( response.answers[i].name );
         }
-
         console.log(newState);
         this.setState(newState);
       })
@@ -47,19 +47,19 @@ class Quiz extends Component {
 
         <div className="answers">
           <div className="answer">
-            {this.state.answers[0]}
+            {this.state.answerName[0]}
           </div>
 
           <div className="answer">
-            {this.state.answers[1]}
+            {this.state.answerName[1]}
           </div>
 
           <div className="answer">
-            {this.state.answers[2]}
+            {this.state.answerName[2]}
           </div>
 
           <div className="answer">
-            {this.state.answers[3]}
+            {this.state.answerName[3]}
           </div>
 
         </div>

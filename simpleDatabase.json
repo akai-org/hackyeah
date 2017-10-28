@@ -1,0 +1,12 @@
+{
+  "x-nature-quiz" : {
+    "count" : "10",
+    "questions" : [ {
+      "answers" : [ {
+        "name" : "abc"
+      } ],
+      "image" : "place",
+      "question" : "Wybuch, co robisz?"
+    } ]
+  }
+}
