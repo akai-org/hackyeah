@@ -141,6 +141,18 @@
   background-color: white;
 }
 
+.donate-view .Box-footer {
+  display: flex;
+  justify-content: center;
+}
+
+
+.donate-view .donate-buttons .Box-button {
+  display: inline-block;
+  margin: 10px;
+  max-width: 40%;
+}
+
 img {
   border-radius: 10px;
 }
