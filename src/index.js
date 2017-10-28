@@ -10,6 +10,7 @@ import Home from './views/Home';
 import Clothes from './views/Clothes';
 import Login from './views/Login';
 import NotFound from './views/NotFound';
+import Donate from './views/Donate';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -18,6 +19,7 @@ ReactDOM.render(
       <Route path='/magic' component={Home}/>
       <Route path="/login" component={Login} />
       <Route path="/clothes" component={Clothes} />
+      <Route path="/donate" component={Donate} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>,
