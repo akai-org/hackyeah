@@ -5,7 +5,10 @@ body {
 }
 
 [id=root] {
-  background: #000;
+  background: linear-gradient(#3d486b, #2f3753);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   color: #fff;
   min-height: 100vh;
 }
