@@ -4,13 +4,25 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 import Box from '../components/Box';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import Stats from '../components/Stats';
 
 const Home = () => (
   <div className="home-view">
     <Header></Header>
 
-    <Stats></Stats>
+    <Box variant="fullwidth color-a" >
+      <header className="Box-header">
+        <h2>Let's make our world a better place 🙂</h2>
+      </header>
+      <main className="Box-content">
+        <img src="/images/food.png" alt="" />
+        <p>With us you can share foods with people in need.</p>
+      </main>
+      <footer className="Box-footer">
+        <div className="Box-button">daj hajs</div>
+      </footer>
+    </Box>
 
     <Box variant="flexible color-a" >
       <header className="Box-header">
@@ -51,10 +63,13 @@ const Home = () => (
       <p>Together we can make the world better. </p>
       </main>
       <footer className="Box-footer">
-          <div className="Box-button">Box button</div>
+        <div className="Box-button">
+          <Link to='/donate'>
+            Help this way!
+          </Link>
+        </div>
       </footer>
     </Box>
-
 
     <Box variant="fullwidth">
       <h2>With yours help we founded 10.000 meals</h2>
@@ -73,7 +88,58 @@ const Home = () => (
       <footer>Thank you very much</footer>
     </Box>
 
-    <div></div>
+    <Box variant="flexible color-c">
+      <header className="Box-header">
+        <h2>Klikaj i pomagaj, każdego dnia</h2>
+      </header>
+      <main className="Box-content">
+        <img src="/images/money.png" alt="" />
+        <p>
+          Pomagaj również przez inne inicjatywy
+        </p>
+      </main>
+      <footer className="Box-footer">
+        <div className="Box-button">
+          <a href="https://www.siepomaga.pl/s/klikaj">Help this way!</a>
+        </div>
+      </footer>
+    </Box>
+
+    <Box variant="flexible color-c">
+      <header className="Box-header">
+        <h2>Zgłoś organizację</h2>
+      </header>
+      <main className="Box-content">
+        <img src="/images/money.png" alt="" />
+        <p>
+          ...
+        </p>
+      </main>
+      <footer className="Box-footer">
+        <div className="Box-button">
+          <a href="#">Zgłoś</a>
+        </div>
+      </footer>
+    </Box>
+
+    <Box variant="flexible color-c">
+      <header className="Box-header">
+        <h2>Chcesz dorzucić swoją cegiełkę?</h2>
+      </header>
+      <main className="Box-content">
+        <img src="/images/money.png" alt="" />
+        <p>
+          ...
+        </p>
+      </main>
+      <footer className="Box-footer">
+        <div className="Box-button">
+          <a href="#">Zgłoś</a>
+        </div>
+      </footer>
+    </Box>
+
+    <Footer></Footer>
 
   </div>
 );

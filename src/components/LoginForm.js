@@ -8,24 +8,24 @@ const LoginForm = (props) => (
   <div className="LoginForm">
     <Box>
       <div className="login-container">
-        <form id="loginForm" className="login-form" novalidate="">
+        <form id="loginForm" className="login-form">
           <div className="wrap-input">
-            <label for="login">Login</label>
-            <input type="text" placeholder="Login" required />
+            <label htmlFor="login">Login</label>
+            <input id="login" name="login" type="text" placeholder="Login" required />
           </div>  
 
           <div className="wrap-input">
-            <label for="password">Password</label>
-            <input type="password" placeholder="Password" required />
+            <label htmlFor="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Password" required />
           </div>
           
           <div className="wrap-input wrap-checkbox">
-            <input type="checkbox" />
-            <label>Remember Me</label>
+            <input id="remeber" name="remeber" type="checkbox" />
+            <label htmlFor="remeber">Remember Me</label>
           </div>
 
           <div className="wrap-btn">
-            <button type="submit" class="btn btn-login">Login</button>
+            <button type="button" className="btn btn-login" onClick={props.onSubmit}>Login</button>
           </div>
         </form>
       </div>
