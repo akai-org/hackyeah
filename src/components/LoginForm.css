@@ -1,4 +1,61 @@
-LoginForm {
+.LoginForm .Box {
+  width: 600px;
+  align-items: center;
+  margin: auto;
+}
+
+.login-container {
+  width: 300px;
+  padding: 50px 25px;
+}
+
+.login-form {
   display: flex;
   flex-direction: column;
+}
+
+.LoginForm label {
+  /* margin: 0 10px; */
+  margin: 2px 0;
+  text-transform: uppercase;
+}
+
+.LoginForm input[type="text"],
+.LoginForm input[type="password"] {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.LoginForm input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+input::placeholder {
+  text-transform: uppercase;
+}
+
+.wrap-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  align-items: flex-start;
+}
+
+.wrap-checkbox {
+  flex-direction: row;
+  align-items: center;
+}
+
+.wrap-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  text-transform: uppercase;
 }
