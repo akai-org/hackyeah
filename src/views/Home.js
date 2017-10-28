@@ -33,7 +33,11 @@ const Home = () => (
         <p>With us you can share foods with people in need.</p>
       </main>
       <footer className="Box-footer">
-          <div className="Box-button">daj hajs</div>
+          <div className="Box-button">
+            <Link to='/food'>
+              Help this way!
+            </Link>
+          </div>
       </footer>
     </Box>
 
