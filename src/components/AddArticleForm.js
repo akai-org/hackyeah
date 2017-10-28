@@ -72,7 +72,8 @@ class AddArticleForm extends Component {
       foodName: document.getElementById('foodName') ? document.getElementById('foodName').value : '',
       foodWeight: document.getElementById('foodWeight') ? document.getElementById('foodWeight').value : '',
       clothesName: document.getElementById('clothesName') ? document.getElementById('clothesName').value : '',
-      quantity: document.getElementById('quantity') ? document.getElementById('quantity').value : ''
+      quantity: document.getElementById('quantity') ? document.getElementById('quantity').value : '',
+      date: new Date()
     };
     let articles = window.localStorage.getItem('articles') ? [].concat(JSON.parse(window.localStorage.getItem('articles'))) : [];
     articles.push(article);
