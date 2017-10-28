@@ -14,6 +14,7 @@ import Private from './views/Private';
 import Organization from './views/Organization';
 import NotFound from './views/NotFound';
 import Donate from './views/Donate';
+import AddArticle from './views/AddArticle';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -26,6 +27,7 @@ ReactDOM.render(
       <Route path="/private" component={Private} />
       <Route path="/organization" component={Organization} />
       <Route path="/donate" component={Donate} />
+      <Route path="/add-article" component={AddArticle} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>,

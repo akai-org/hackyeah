@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router'
 
 import Header from '../components/Header';
 import LoginForm from '../components/LoginForm';
