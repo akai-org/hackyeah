@@ -8,7 +8,7 @@ const LoginForm = (props) => (
   <div className="LoginForm">
     <Box>
       <div className="login-container">
-        <form role="form" id="loginForm" className="login-form" novalidate="">
+        <form id="loginForm" className="login-form" novalidate="">
           <div className="wrap-input">
             <label for="login">Login</label>
             <input type="text" placeholder="Login" required />
