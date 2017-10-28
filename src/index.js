@@ -9,6 +9,7 @@ import 'animate.css/animate.min.css';
 
 import Home from './views/Home';
 import Clothes from './views/Clothes';
+import Food from './views/Food';
 import Login from './views/Login';
 import Logout from './views/Logout';
 import Company from './views/Company';
@@ -26,6 +27,7 @@ ReactDOM.render(
       <Route path="/login" component={Login} />
       <Route path="/logout" component={Logout} />
       <Route path="/clothes" component={Clothes} />
+      <Route path="/food" component={Food} />
       <Route path="/company" component={Company} />
       <Route path="/private" component={Private} />
       <Route path="/organization" component={Organization} />
