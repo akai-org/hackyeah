@@ -5,6 +5,7 @@ import 'normalize.css/normalize.css';
 import './index.css';
 //import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import 'animate.css/animate.min.css';
 
 import Home from './views/Home';
 import Clothes from './views/Clothes';
