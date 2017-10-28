@@ -11,6 +11,7 @@ import Clothes from './views/Clothes';
 import Login from './views/Login';
 import Company from './views/Company';
 import Private from './views/Private';
+import Organization from './views/Organization';
 import NotFound from './views/NotFound';
 import Donate from './views/Donate';
 
@@ -23,6 +24,7 @@ ReactDOM.render(
       <Route path="/clothes" component={Clothes} />
       <Route path="/company" component={Company} />
       <Route path="/private" component={Private} />
+      <Route path="/organization" component={Organization} />
       <Route path="/donate" component={Donate} />
       <Route component={NotFound} />
     </Switch>
