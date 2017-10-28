@@ -18,7 +18,7 @@ const Home = () => (
         <h2>Let's make our world a better place 🙂</h2>
       </header>
       <main className="Box-content">
-        <img src="/images/money-transparent.png" alt="" />
+        <img src="/images/earth.png" alt="" />
         <p>
           This is prototype version created during HackYeah hackathon in Kraków.
         </p>
@@ -86,14 +86,14 @@ const Home = () => (
         <h2>Klikaj i pomagaj, każdego dnia</h2>
       </header>
       <main className="Box-content">
-        <img src="/images/money.png" alt="" />
+        <img src="/images/calendar.png" alt="" />
         <p>
           Pomagaj również przez inne inicjatywy
         </p>
       </main>
       <footer className="Box-footer">
         <div className="Box-button">
-          <a href="https://www.siepomaga.pl/s/klikaj">Help this way!</a>
+          <a href="https://www.siepomaga.pl/s/klikaj">Dowiedz się więcej</a>
         </div>
       </footer>
     </Box>
@@ -105,12 +105,12 @@ const Home = () => (
       <main className="Box-content">
         <img src="/images/money.png" alt="" />
         <p>
-          ...
+          Znasz ogranizację, której jeszcze nie pomagamy? <br/>
         </p>
       </main>
       <footer className="Box-footer">
         <div className="Box-button">
-          <a href="#">Zgłoś</a>
+          <a href="#">Zgłoś organizację</a>
         </div>
       </footer>
     </Box>
@@ -120,43 +120,9 @@ const Home = () => (
         <h2>Chcesz dorzucić swoją cegiełkę?</h2>
       </header>
       <main className="Box-content">
-        <img src="/images/money.png" alt="" />
+        <img src="/images/brick.png" alt="" />
         <p>
-          ...
-        </p>
-      </main>
-      <footer className="Box-footer">
-        <div className="Box-button">
-          <a href="#">Zgłoś</a>
-        </div>
-      </footer>
-    </Box>
-
-    <Box variant="medium color-c">
-    <header className="Box-header">
-      <h2>Our community needs yours support</h2>
-      </header>
-      <main className="Box-content">
-      <img src="/images/money.png" alt="" />
-      <p>Together we can make the world better. </p>
-      </main>
-      <footer className="Box-footer">
-        <div className="Box-button">
-          <Link to='/donate'>
-            Help this way!
-          </Link>
-        </div>
-      </footer>
-    </Box>
-
-    <Box variant="small color-d">
-      <header className="Box-header">
-        <h2>Chcesz dorzucić swoją cegiełkę?</h2>
-      </header>
-      <main className="Box-content">
-        <img src="/images/money.png" alt="" />
-        <p>
-          ...
+          Każda pomoc się liczy, a razem możemy więcej
         </p>
       </main>
       <footer className="Box-footer">
