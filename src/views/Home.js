@@ -1,29 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './Home.css';
 import Box from '../components/Box';
 import Header from '../components/Header';
+import Stats from '../components/Stats';
 
 const Home = () => (
   <div className="home-view">
     <Header></Header>
 
-    <Box variant="fullwidth">
-      <h2>With yours help we founded 10.000 meals</h2>
-      <div>
-        <img src="http://via.placeholder.com/125x125" alt="" />
-        <p>10.000 meals</p>
-      </div>
-      <div>
-        <img src="http://via.placeholder.com/125x125" alt="" />
-        <p>2.500 fed people</p>
-      </div>
-      <div>
-        <img src="http://via.placeholder.com/125x125" alt="" />
-        <p>600.000 relayed clothes</p>
-      </div>
-      <footer>Thank you very much</footer>
-    </Box>
+    <Stats></Stats>
 
     <Box variant="flexible color-a" >
       <header className="Box-header">
@@ -47,7 +34,11 @@ const Home = () => (
         <p>Or relay your unused clothes.</p>
       </main>
       <footer className="Box-footer">
-          <div className="Box-button">daj hajs</div>
+        <div className="Box-button">
+          <Link to='/clothes'>
+            Help this way!
+          </Link>
+        </div>
       </footer>
     </Box>
 
@@ -60,7 +51,7 @@ const Home = () => (
       <p>Together we can make the world better. </p>
       </main>
       <footer className="Box-footer">
-          <div className="Box-button">daj hajs</div>
+          <div className="Box-button">Box button</div>
       </footer>
     </Box>
 

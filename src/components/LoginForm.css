@@ -69,6 +69,7 @@ input::placeholder {
   font-variant: small-caps;
   text-decoration: none;
   text-transform: lowercase;
+
   box-shadow: 0 9px 0 rgba(0,0,0, .3);
   position: relative;
   overflow: hidden;
@@ -90,4 +91,26 @@ input::placeholder {
 .btn:hover{
   cursor: pointer;
   background-color: white;
+}
+
+
+
+.account-info-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+}
+
+.account-info-box {
+  padding: 0 10px;
+  margin: 5px 0;
+}
+
+.account-info-private {
+  border-left: 1px solid rgba(0,0,0,0.14);
+  border-right: 1px solid rgba(0,0,0,0.14);
+}
+
+.m-t-10 {
+  margin-top: 10px;
 }
