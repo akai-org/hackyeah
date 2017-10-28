@@ -9,7 +9,7 @@ const Company = () => (
   <div className="company-view">
     <Header></Header>
 
-    <Box variant="flexible color-b">
+    <Box variant="small color-b">
       <header className="Box-header">
         <h2>Lidl</h2>
       </header>
@@ -23,7 +23,7 @@ const Company = () => (
 
     <Stats/>
 
-    <Box variant="flexible color-b">
+    <Box variant="small color-b">
       <header className="Box-header">
         <h2>Towar Giveway</h2>
       </header>
@@ -38,7 +38,7 @@ const Company = () => (
       </main>
     </Box>
 
-    <Box variant="flexible color-b">
+    <Box variant="small color-b">
       <header className="Box-header">
         <h2>Donate</h2>
       </header>
@@ -53,7 +53,7 @@ const Company = () => (
       </main>
     </Box>
 
-    <Box variant="flexible color-b">
+    <Box variant="small color-b">
       <header className="Box-header">
         <h2>Start campany with us</h2>
       </header>
@@ -68,7 +68,7 @@ const Company = () => (
       </main>
     </Box>
 
-    <Box variant="fullwidth color-b">
+    <Box variant="large color-b">
       <header className="Box-header">
         <h2>Historia Waszego wsparcia</h2>
       </header>
