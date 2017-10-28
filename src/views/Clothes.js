@@ -3,6 +3,7 @@ import React from 'react';
 import './Home.css';
 import Box from '../components/Box';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import Stats from '../components/Stats';
 
 import { compose, withProps } from "recompose"
@@ -58,7 +59,7 @@ const Clothes = () => (
   <div className="home-view">
     <Header></Header>
 
-    <Box variant="fullwidth color-b">
+    <Box variant="large color-b">
       <header className="Box-header">
         <h2>Let your wardrobe breath and help others!</h2>
       </header>
@@ -73,11 +74,13 @@ const Clothes = () => (
       </main>
     </Box>
 
-    <Box variant="fullwidth color-a map">
+    <Box variant="large color-a map">
       <MyMapComponent isMarkerShown />
     </Box>
 
     <Stats></Stats>
+
+    <Footer/>
 
   </div>
 );
