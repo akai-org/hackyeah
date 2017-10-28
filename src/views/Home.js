@@ -28,6 +28,14 @@ const Home = () => (
           <a href="https://github.com/akai-org/hackyeah/tree/x-social/develop">See source code</a>
         </div>
       </footer>
+      <footer className="Box-footer">
+        <div>&nbsp;</div>
+      </footer>
+      <footer className="Box-footer">
+        <div className="Box-button">
+          <a href="https://hackyeah.hackerearth.com">Learn more about event</a>
+        </div>
+      </footer>
     </Box>
 
     <Box variant="small color-d" >
