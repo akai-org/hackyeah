@@ -11,7 +11,7 @@ const Home = () => (
   <div className="home-view">
     <Header></Header>
 
-    <Box variant="fullwidth color-a" >
+    <Box variant="large color-a" >
       <header className="Box-header">
         <h2>Let's make our world a better place 🙂</h2>
       </header>
@@ -24,7 +24,7 @@ const Home = () => (
       </footer>
     </Box>
 
-    <Box variant="flexible color-a" >
+    <Box variant="small color-a" >
       <header className="Box-header">
         <h2>Share your foods</h2>
       </header>
@@ -37,7 +37,7 @@ const Home = () => (
       </footer>
     </Box>
 
-    <Box variant="flexible color-b">
+    <Box variant="small color-b">
       <header className="Box-header">
         <h2>Share your clothes</h2>
       </header>
@@ -54,7 +54,7 @@ const Home = () => (
       </footer>
     </Box>
 
-    <Box variant="flexible color-c">
+    <Box variant="small color-c">
     <header className="Box-header">
       <h2>Our community needs yours support</h2>
       </header>
@@ -71,7 +71,7 @@ const Home = () => (
       </footer>
     </Box>
 
-    <Box variant="fullwidth">
+    <Box variant="large">
       <h2>With yours help we founded 10.000 meals</h2>
       <div>
         <img src="http://via.placeholder.com/125x125" alt="" />
@@ -88,7 +88,7 @@ const Home = () => (
       <footer>Thank you very much</footer>
     </Box>
 
-    <Box variant="flexible color-c">
+    <Box variant="small color-c">
       <header className="Box-header">
         <h2>Klikaj i pomagaj, każdego dnia</h2>
       </header>
@@ -105,7 +105,7 @@ const Home = () => (
       </footer>
     </Box>
 
-    <Box variant="flexible color-c">
+    <Box variant="small color-c">
       <header className="Box-header">
         <h2>Zgłoś organizację</h2>
       </header>
@@ -122,7 +122,7 @@ const Home = () => (
       </footer>
     </Box>
 
-    <Box variant="flexible color-c">
+    <Box variant="small color-c">
       <header className="Box-header">
         <h2>Chcesz dorzucić swoją cegiełkę?</h2>
       </header>
@@ -135,6 +135,23 @@ const Home = () => (
       <footer className="Box-footer">
         <div className="Box-button">
           <a href="#">Zgłoś</a>
+        </div>
+      </footer>
+    </Box>
+
+    <Box variant="medium color-a">
+    <header className="Box-header">
+      <h2>Our community needs yours support</h2>
+      </header>
+      <main className="Box-content">
+      <img src="/images/money.png" alt="" />
+      <p>Together we can make the world better. </p>
+      </main>
+      <footer className="Box-footer">
+        <div className="Box-button">
+          <Link to='/donate'>
+            Help this way!
+          </Link>
         </div>
       </footer>
     </Box>

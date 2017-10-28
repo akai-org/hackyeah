@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import Box from '../components/Box';
 
 const Stats = () => (
-  <Box variant="fullwidth">
+  <Box variant="large">
     <h2>With yours help we founded 10.000 meals</h2>
     <div>
       <img src="http://via.placeholder.com/125x125" alt=""/>
