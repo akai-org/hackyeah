@@ -1,6 +1,6 @@
 .Box {
   text-align: center;
-  background-color: #d13140;
+  background: linear-gradient(#fda82c, #ca971b);
   border-radius: 10px;
   color: white;
 
@@ -46,15 +46,15 @@
 }
 
 .color-a {
-  background-color: #d13140;
+  background: linear-gradient(#d13140, #a02029);
 }
 
 .color-b {
-  background-color: #21cdfc;
+  background: linear-gradient(#21cdfc, #00abdb);
 }
 
 .color-c {
-  background-color: #fda82c;
+  background: linear-gradient(#fda82c, #ca971b);
 }
 
 .Box-header {
@@ -80,14 +80,37 @@
 }
 
 .Box-footer .Box-button {
-  background-color: rgba(0,0,0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  background-color: rgba(0,0,0, 0.15);
   width: 50%;
   border-radius: 10px;
   height: 30px;
+  line-height: 30px;
   margin: 0 auto;
+}
+
+.Box-footer .Box-button:hover{
+  cursor: pointer;
+  animation: button-darken 0.7s;
+  background-color: rgba(0,0,0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.0);
+}
+
+img {
+  border-radius: 10px;
 }
 
 @keyframes Box-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@keyframes button-darken {
+  from {
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    background-color: rgba(0,0,0, 0.15);
+  } to {
+    border: 2px solid rgba(0, 0, 0, 0.0);
+    background-color: rgba(0,0,0, 0.3);
+  }
 }

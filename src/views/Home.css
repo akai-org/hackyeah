@@ -6,6 +6,13 @@
   grid-row-gap: 20px;
 }
 
+.Box-button > a {
+  color: white;
+  font-variant: small-caps;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
 .home-view img {
   max-width: 150px;
 }
