@@ -9,6 +9,7 @@ class Login extends Component {
   submit() {
     const login = document.getElementById('login').value;
     const password = document.getElementById('password').value;
+    document.cookie = "loginName=" + login;
 
     if (login === 'companyUser' && password === 'companyPassword') {
       window.location = "/company"
