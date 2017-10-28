@@ -8,7 +8,6 @@ import registerServiceWorker from './registerServiceWorker';
 
 import Home from './views/Home';
 import Login from './views/Login';
-import Register from './views/Register';
 import NotFound from './views/NotFound';
 
 ReactDOM.render(
@@ -17,7 +16,6 @@ ReactDOM.render(
       <Route exact path='/' component={Home}/>
       <Route path='/magic' component={Home}/>
       <Route path="/login" component={Login} />
-      <Route path="/register" component={Register} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>,
