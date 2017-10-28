@@ -6,16 +6,21 @@
   padding: 20px 0;
   grid-column-start: 1;
   grid-column-end: 4;
+  border-radius: 10px;
+  background: linear-gradient(#80e5e5, #64c1c4);
+  margin-top: 20px;
 }
 
 .Header > h1 {
-  margin: 0 !important;
+  margin: 0 0 0 20px !important;
   font-size: 1rem;
 }
 
 .Header > nav > a {
+  margin: 0 20px 0 0;
   color: white;
   font-variant: small-caps;
   text-decoration: none;
   text-transform: lowercase;
+  transition: 1s;
 }
