@@ -49,7 +49,7 @@ class ArticleItemList extends Component {
             year="numeric" />
         </div>
         <div>{article.articleType}</div>
-        <div>{article.foodWeight}</div>
+        <div>{article.foodWeight} [kg]</div>
         <div>{article.foodName}</div>
       </div>
     )
