@@ -1,9 +1,13 @@
 import React from 'react';
 
+import './Home.css';
 import Box from '../components/Box';
+import Header from '../components/Header';
 
 const Home = () => (
-  <div>
+  <div className="home-view">
+    <Header></Header>
+
     <Box variant="fullwidth">
       <h2>With yours help we founded 10.000 meals</h2>
       <div>
@@ -20,6 +24,7 @@ const Home = () => (
       </div>
       <footer>Thank you very much</footer>
     </Box>
+
     <Box variant="flexible color-a" >
       <header className="Box-header">
         <h2>Share your foods</h2>
@@ -30,9 +35,9 @@ const Home = () => (
       </main>
       <footer className="Box-footer">
           <div className="Box-button">Box button</div>
-          <div className="Box-button">Box button</div>
       </footer>
     </Box>
+
     <Box variant="flexible color-b">
       <header className="Box-header">
         <h2>Share your clothes</h2>
@@ -43,9 +48,9 @@ const Home = () => (
       </main>
       <footer className="Box-footer">
           <div className="Box-button">Box button</div>
-          <div className="Box-button">Box button</div>
       </footer>
     </Box>
+
     <Box variant="flexible color-c">
     <header className="Box-header">
       <h2>Our community needs yours support</h2>
@@ -56,9 +61,9 @@ const Home = () => (
       </main>
       <footer className="Box-footer">
           <div className="Box-button">Box button</div>
-          <div className="Box-button">Box button</div>
       </footer>
     </Box>
+
   </div>
 );
 

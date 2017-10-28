@@ -4,7 +4,7 @@ import './Header.css';
 
 const Header = (props) => (
   <header className="Header">
-    <h1>{ props.title }</h1>
+    <h1>Title</h1>
     <nav>
       <a href="#">Login</a>
     </nav>
