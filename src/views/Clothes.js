@@ -3,6 +3,7 @@ import React from 'react';
 import './Home.css';
 import Box from '../components/Box';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import Stats from '../components/Stats';
 
 import { compose, withProps } from "recompose"
@@ -78,6 +79,8 @@ const Clothes = () => (
     </Box>
 
     <Stats></Stats>
+
+    <Footer/>
 
   </div>
 );

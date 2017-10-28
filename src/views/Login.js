@@ -15,7 +15,7 @@ class Login extends Component {
       window.location = "/company"
     } else if (login === 'privateUser' && password === 'privatePassword') {
       window.location = "/private"
-    } else if (login === 'organizationUser' && password === 'orgaanizationPassword') {
+    } else if (login === 'organizationUser' && password === 'organizationPassword') {
       window.location = "/organization"
     } else {
       alert('Check credentials');
