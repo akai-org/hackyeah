@@ -18,7 +18,9 @@ const Home = () => (
         <h2>Let's make our world a better place 🙂</h2>
       </header>
       <main className="Box-content">
+        <img style={{background: "white"}} src="/images/akai.png" alt="" />
         <img src="/images/earth.png" alt="" />
+        <img src="/images/hackyeah.jpg" alt="" />
         <p>
           This is prototype version created during HackYeah hackathon in Kraków.
         </p>

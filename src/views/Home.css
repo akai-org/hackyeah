@@ -17,6 +17,7 @@
 .company-view img,
 .donate-view img {
   max-width: 150px;
+  margin: 0 20px;
 }
 
 .donate-view img {
