@@ -19,10 +19,35 @@ const MyMapComponent = compose(
   withGoogleMap
 )((props) =>
   <GoogleMap
-    defaultZoom={8}
-    defaultCenter={{ lat: -34.397, lng: 150.644 }}
+    defaultZoom={6}
+    defaultCenter={{ lat: 52.2430, lng: 16.5603 }}
   >
-    {props.isMarkerShown && <Marker position={{ lat: -34.397, lng: 150.644 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 51.2813, lng: 16.5418 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 52.1734, lng: 21.0658 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 54.4735, lng: 18.2451 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 50.2925, lng: 22.1555 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 50.2715, lng: 18.3120 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 49.5605, lng: 19.5714 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 50.3040, lng: 18.1802 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 53.0401, lng: 19.2425 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 52.2430, lng: 16.5603 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 51.0850, lng: 21.5808 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 50.4257, lng: 16.5006 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 51.3139, lng: 17.1617 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 54.4540, lng: 17.3326 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 49.2828, lng: 22.1944 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 54.1017, lng: 21.0828 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 51.4505, lng: 15.0103 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 51.0944, lng: 21.1413 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 54.3642, lng: 18.4829 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 51.5751, lng: 19.4242 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 50.4017, lng: 22.4014 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 54.0930, lng: 19.2410 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 53.2131, lng: 15.2534 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 50.5325, lng: 21.3053 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 53.1009, lng: 15.2510 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 52.0200, lng: 23.0700 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 49.5118, lng: 19.2028 }} />}
   </GoogleMap>
 )
 
@@ -48,7 +73,7 @@ const Clothes = () => (
       </main>
     </Box>
 
-    <Box variant="fullwidth color-c">
+    <Box variant="fullwidth color-a map">
       <MyMapComponent isMarkerShown />
     </Box>
 

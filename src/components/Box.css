@@ -38,7 +38,10 @@
 }
 
 .fullwidth div {
-  width: 150px;
+  min-width: 150px;
+}
+.map > div {
+  width: 100%;
 }
 
 .fullwidth footer {
