@@ -8,6 +8,7 @@
 
 .login-container {
   width: 300px;
+
   padding: 50px 25px;
 }
 
@@ -25,9 +26,12 @@
 
 .LoginForm input[type="text"],
 .LoginForm input[type="password"] {
+  border-radius: 10px;
   padding: 10px;
   width: 100%;
   box-sizing: border-box;
+  outline-style: none;
+  border: 0;
 }
 
 .LoginForm input[type="checkbox"] {
