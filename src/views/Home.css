@@ -13,6 +13,7 @@
   text-transform: lowercase;
 }
 
-.home-view img {
+.home-view img,
+.company-view img {
   max-width: 150px;
 }
