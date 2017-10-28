@@ -1,4 +1,4 @@
-.home-view, .company-view {
+.home-view, .company-view, .donate-view {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
@@ -14,7 +14,12 @@
 }
 
 .home-view img,
-.company-view img {
+.company-view img,
+.donate-view img {
   max-width: 150px;
   margin: 0 20px;
+}
+
+.donate-view img {
+  max-width: 300px;
 }
