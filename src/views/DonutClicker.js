@@ -19,6 +19,14 @@ class DonutClicker extends Component {
   }
 
   clickDonut = () => {
+    if(!this.initForce) {
+      document.getElementById('donut-mama').addEventListener('webkitmouseforceup', () => {
+        this.clickDonut();
+      });
+
+      this.initForce = true;
+    }
+
     document.getElementById('donut-mama').classList.toggle("toggled-one");
     document.getElementById('donut-mama').classList.toggle("toggled-two");
     document.getElementById('score').classList.toggle("scored-one");
