@@ -16,6 +16,10 @@ class DonutClicker extends Component {
     this.extraPoints = 1;
     this.donutRain = 10;
     this.superDonut = 100;
+
+    var ua = "UA-108804320-1";
+    var host = 'hackyeah.akai.org.pl';
+    this.ga = new GoogleAnalytics(ua, host);
   }
 
   clickDonut = () => {
@@ -26,6 +30,13 @@ class DonutClicker extends Component {
 
       this.initForce = true;
     }
+
+    this.ga('send', {
+      hitType: 'event',
+      eventCategory: 'Donut',
+      eventAction: 'click',
+      eventLabel: 'HackYeah'
+    });
 
     document.getElementById('donut-mama').classList.toggle("toggled-one");
     document.getElementById('donut-mama').classList.toggle("toggled-two");
