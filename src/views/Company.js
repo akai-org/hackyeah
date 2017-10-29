@@ -26,7 +26,7 @@ class Company extends Component {
 
   getCompany() {
     const $this = this;
-    fetch('http://localhost:3005/api/users/company')
+    fetch('https://hackyeah.akai.org.pl/api/users/company')
       .then( (user) => {
         return user.json();
       })

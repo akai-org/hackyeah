@@ -12,7 +12,7 @@ class Login extends Component {
   }
 
   componentWillMount() {
-    fetch('http://localhost:3005/api/users')
+    fetch('https://hackyeah.akai.org.pl/api/users')
       .then( (users) => {
         return users.json();
       })

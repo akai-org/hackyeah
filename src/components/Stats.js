@@ -13,7 +13,7 @@ class Stats extends React.Component {
   }
 
   componentWillMount() {
-    fetch('http://localhost:3005/api/stats')
+    fetch('https://hackyeah.akai.org.pl/api/stats')
       .then((data) => {
         return data.json();
       })
