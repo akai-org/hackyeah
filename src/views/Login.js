@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Header from '../components/Header';
 import LoginForm from '../components/LoginForm';
+import Loader from '../components/Loader';
 
 class Login extends Component {
   constructor(props) {
@@ -46,7 +47,7 @@ class Login extends Component {
 
   render() {
     if (!this.state) {
-      return <div>Loading</div>
+      return <Loader></Loader>;
     }
     return (
       <div className="login-view">
