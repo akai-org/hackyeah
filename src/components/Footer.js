@@ -5,7 +5,7 @@ import './Footer.css';
 
 const Footer = (props) => (
   <footer className="Footer">
-    Designed and Developed by AKAI 👽
+    Designed and Developed by <Link to='/clicker'>AKAI</Link> 👽
   </footer>
 );
 
