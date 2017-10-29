@@ -17,11 +17,8 @@ app.listen(3005, () => {
   console.log('Example app listening on port 3005!');
 });
 
-app.get('/api/:path', (req, res) => {
-  const path = req.param('path');
-  const data = db.get(`/app/${path}`);
-  console.log(data);
-  res.json(data);
+app.get('/api/stats', (req, res) => {
+  res.json( db.get(`/app/stats`) );
 });
 
 app.use(express.static('build'));

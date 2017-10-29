@@ -13,20 +13,21 @@ class Stats extends React.Component {
 
   componentWillMount() {
     fetch('http://localhost:3005/api/stats')
-      .then( (data) => {
+      .then((data) => {
         return data.json();
-      } )
-      .then( (data) => {
-        this.setState( () => { return data } );
-        console.log(this.state);
       })
-      .catch( (err) => {
+      .then((data) => {
+        this.setState(() => {
+          return data
+        });
+      })
+      .catch((err) => {
         console.log(err);
-      } );
+      });
   }
 
   render() {
-    if(!this.state) {
+    if (!this.state) {
       return <div>Loading</div>
     }
     return (
@@ -40,12 +41,12 @@ class Stats extends React.Component {
 
         <div>
           <img src="/images/earth.png" alt=""/>
-          <p><span className="count">2500</span> fed people</p>
+          <p><span className="count">{this.state.second}</span> fed people</p>
         </div>
 
         <div>
           <img src="/images/clothes.png" alt=""/>
-          <p><span className="count">6000</span> relayed clothes</p>
+          <p><span className="count">{this.state.third}</span> relayed clothes</p>
         </div>
         <footer>Thank you very much</footer>
       </Box>
@@ -54,7 +55,7 @@ class Stats extends React.Component {
 
   componentDidMount() {
     $('.count').each(function () {
-      $(this).prop('Counter',0).animate({
+      $(this).prop('Counter', 0).animate({
         Counter: $(this).text()
       }, {
         duration: 8000,
@@ -63,7 +64,7 @@ class Stats extends React.Component {
           $(this).text(Math.ceil(now));
         }
       });
-     });
+    });
   }
 }
 
