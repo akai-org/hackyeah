@@ -5,7 +5,7 @@ import Box from '../components/Box';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../components/Clicker.css';
-import GoogleAnalytics from 'ga';
+// import GoogleAnalytics from 'ga';
 
 import cookie from 'cookie';
 
@@ -17,12 +17,12 @@ class DonutClicker extends Component {
     this.extraPoints = 1;
     this.donutRain = 10;
     this.superDonut = 100;
-
-    var ua = "UA-108804320-1";
-    var host = 'hackyeah.akai.org.pl';
-    this.ga = new GoogleAnalytics(ua, host);
-    this.ga.trackPage('clicker');
-    console.log(this.ga);
+    //
+    // var ua = "UA-108804320-1";
+    // var host = 'hackyeah.akai.org.pl';
+    // this.ga = new GoogleAnalytics(ua, host);
+    // this.ga.trackPage('clicker');
+    // console.log(this.ga);
   }
 
   clickDonut = () => {
@@ -34,12 +34,12 @@ class DonutClicker extends Component {
       this.initForce = true;
     }
 
-    this.ga.trackEvent('send', {
-      hitType: 'event',
-      eventCategory: 'Donut',
-      eventAction: 'click',
-      eventLabel: 'HackYeah'
-    });
+    // this.ga.trackEvent('send', {
+    //   hitType: 'event',
+    //   eventCategory: 'Donut',
+    //   eventAction: 'click',
+    //   eventLabel: 'HackYeah'
+    // });
 
     document.getElementById('donut-mama').classList.toggle("toggled-one");
     document.getElementById('donut-mama').classList.toggle("toggled-two");
