@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import $ from 'jquery';
 
 import Box from '../components/Box';
+import Loader from '../components/Loader';
 
 import './Stats.css';
 
@@ -27,8 +28,8 @@ class Stats extends React.Component {
   }
 
   render() {
-    if (!this.state) {
-      return <div>Loading</div>
+    if(!this.state) {
+      return <Loader></Loader>;
     }
     return (
       <Box variant="Stats large">

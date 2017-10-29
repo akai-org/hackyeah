@@ -27,7 +27,6 @@ ReactDOM.render(
     <BrowserRouter>
       <Switch>
         <Route exact path='/' component={Home}/>
-        <Route path='/magic' component={Home}/>
         <Route path="/login" component={Login} />
         <Route path="/logout" component={Logout} />
         <Route path="/clothes" component={Clothes} />
