@@ -57,7 +57,7 @@ class DonutClicker extends Component {
     return (
       <div className="clicker-view">
       <audio id="audio" style={{opacity: 0}} src="http://www.soundjay.com/button/beep-07.wav" autostart="false" ></audio>
-      <audio id="audio1" style={{opacity: 0}} src="https://freesound.org/people/PaulMorek/sounds/172138/nom_D_03.wav" autostart="false" ></audio>
+      <audio id="audio1" style={{opacity: 0}} src="/nomnom.mp3" autostart="false" ></audio>
       
       <Header/>
 
