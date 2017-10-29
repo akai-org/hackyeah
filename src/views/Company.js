@@ -44,7 +44,7 @@ class Company extends Component {
       this.articles = [].concat(JSON.parse(window.localStorage.getItem('articles')))
     } else {
       this.articles = this.getArticlesFromFile();
-    }    
+    }
   }
 
   getArticlesFromFile() {
@@ -67,12 +67,16 @@ class Company extends Component {
 
   render () {
     if (!this.state || !this.state.user) {
-      return <Loader></Loader>
+      return (
+        <Box variant="large">
+          <Loader></Loader>
+        </Box>
+      );
     }
     return (
       <div className="company-view">
         <Header></Header>
-    
+
         <Box variant="large color-b">
           <header className="Box-header">
             <h2>{this.state.user.login}</h2>
@@ -84,7 +88,7 @@ class Company extends Component {
             </p>
           </main>
         </Box>
-  
+
         <Box variant="small color-d" >
           <header className="Box-header">
             <h2>Share your food</h2>
@@ -99,24 +103,24 @@ class Company extends Component {
             </div>
           </footer>
         </Box>
-    
+
         <Box variant="small color-b">
           <header className="Box-header">
-            <h2>Share your clothes</h2>
+            <h2>Add new article</h2>
           </header>
           <main className="Box-content">
-            <img src="/images/clothes.png" alt="" />
-            <p>Or relay your unused clothes.</p>
+            <img src="/images/plus.png" alt="" />
+            <p>If you would to share any foods, things or money you can add those here.</p>
           </main>
           <footer className="Box-footer">
             <div className="Box-button">
-              <Link to='/clothes'>
-                Find on map
+              <Link to='/add-article'>
+                Add article
               </Link>
             </div>
           </footer>
         </Box>
-    
+
         <Box variant="small color-c">
         <header className="Box-header">
           <h2>Our community needs yours support</h2>
@@ -133,9 +137,9 @@ class Company extends Component {
             </div>
           </footer>
         </Box>
-    
+
         <Stats/>
-    
+
         <Box variant="large color-b">
           <header className="Box-header">
             <h2>Your support history</h2>
@@ -145,9 +149,9 @@ class Company extends Component {
             <ArticleList articles={this.articles}></ArticleList>
           </main>
         </Box>
-    
+
         <Footer/>
-    
+
       </div>
     );
   }

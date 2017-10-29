@@ -29,7 +29,11 @@ class Stats extends React.Component {
 
   render() {
     if(!this.state) {
-      return <Loader></Loader>;
+      return (
+        <Box variant="large">
+          <Loader></Loader>
+        </Box>
+      );
     }
     return (
       <Box variant="Stats large">

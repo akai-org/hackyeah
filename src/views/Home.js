@@ -89,6 +89,7 @@ const Home = () => (
       </footer>
     </Box>
 
+     
     <Stats />
 
     <Box variant="small color-c">
