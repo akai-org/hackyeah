@@ -7,15 +7,34 @@ import Stats from '../components/Stats';
 import ArticleList from '../components/ArticleList';
 import cookie from 'cookie';
 
+import ArticlesJson from '../resources/articleList.json';
+
 class Company extends Component {
 
   componentWillMount() {
     this.getArticles();
+    this.prepareArticles(this.articles);
+    // this.articlesData = articlesData;
   }
 
   getArticles() {
-    this.articles = window.localStorage.getItem('articles') ? [].concat(JSON.parse(window.localStorage.getItem('articles'))) : [];
-    this.articles = this.articles.sort((a, b) => {
+    if (window.localStorage.getItem('articles')) {
+      this.articles = [].concat(JSON.parse(window.localStorage.getItem('articles')))
+    } else {
+      this.articles = this.getArticlesFromFile();
+    }    
+  }
+
+  getArticlesFromFile() {
+    if (ArticlesJson) {
+      window.localStorage.setItem('articles', JSON.stringify(ArticlesJson));
+      return ArticlesJson;
+    }
+    return [];
+  }
+
+  prepareArticles(articles) {
+    this.articles = articles.sort((a, b) => {
       if (a.date < b.date)
         return 1;
       if (a.date > b.date)
