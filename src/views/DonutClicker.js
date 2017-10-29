@@ -33,6 +33,7 @@ class DonutClicker extends Component {
         document.getElementById('donut-mama').style.animation= "rotating " + this.acceleration + "s linear infinite";
     }.bind(this), 10);
     */
+  }
 
 
 
