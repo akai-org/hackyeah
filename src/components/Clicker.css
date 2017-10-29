@@ -16,6 +16,64 @@
   cursor: pointer;
 }
 
+.board {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.board div  {
+  flex-basis: 33%;
+  flex-grow: 1;
+}
+
+
+.board div {
+  animation: none;
+}
+
+
+.board div:nth-child(1) {
+  text-align: left;
+}
+.board div:nth-child(1) div {
+  display: inline;
+  width: 50%;
+}
+
+.board div:nth-child(2) {
+  display:flex;
+  justify-content: center;
+}
+
+.board div:nth-child(2) div {
+  width: 50%;
+
+}
+
+.board div:nth-child(4) {
+  text-align: left;
+    display: inline;
+}
+
+.board div:nth-child(4) div {
+  display: inline;
+  width: 50%;
+}
+
+.board img {
+  width: 60px;
+  height: 60px;
+}
+
+.board div img {
+  opacity: 1;
+}
+
+.board div img.hidden {
+  opacity: 0;
+}
+
 .donut-image {
     width: 300px;
     height: 300px;
@@ -46,6 +104,15 @@
   animation: click-scored-two .33s;
 }
 
+.bought-one img{
+  animation: click-scored-one .4s;
+}
+
+.bought-two img{
+  animation: click-scored-two .4;
+}
+
+
 #extra-points {
   transition: .2s;
 }
@@ -62,7 +129,12 @@
   transform: translate(0, 0);
 }
 
-
+.donut-constant {
+  display: inline-block;
+  line-height: 40px;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
 .shop {
   width: 100%;
   flex-direction: row;
