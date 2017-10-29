@@ -17,6 +17,7 @@ import Logout from './views/Logout';
 import Company from './views/Company';
 import Private from './views/Private';
 import Organization from './views/Organization';
+import DonutClicker from './views/DonutClicker';
 import NotFound from './views/NotFound';
 import Donate from './views/Donate';
 import AddArticle from './views/AddArticle';
@@ -34,6 +35,7 @@ ReactDOM.render(
         <Route path="/private" component={Private} />
         <Route path="/organization" component={Organization} />
         <Route path="/donate" component={Donate} />
+        <Route path="/clicker" component={DonutClicker} />
         <Route path="/add-article" component={AddArticle} />
         <Route component={NotFound} />
       </Switch>
