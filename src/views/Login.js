@@ -2,27 +2,53 @@ import React, { Component } from 'react';
 
 import Header from '../components/Header';
 import LoginForm from '../components/LoginForm';
+import Loader from '../components/Loader';
 
 class Login extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.submit = this.submit.bind(this);
+  }
+
+  componentWillMount() {
+    fetch('http://localhost:3005/api/users')
+      .then( (users) => {
+        return users.json();
+      })
+      .then( (_users) => {
+        this.setState({users: _users});
+      })
+      .catch( (err) => {
+        console.log(err);
+      } );
+  }
 
   submit() {
-    const login = document.getElementById('login').value;
-    const password = document.getElementById('password').value;
-    document.cookie = "loginName=" + login;
+    const user = {
+      login: document.getElementById('login').value,
+      password: document.getElementById('password').value
+    };
+    document.cookie = "loginName=" + user.login;
+    let changeLocation = false;
 
-    if (login === 'companyUser' && password === 'companyPassword') {
-      window.location = "/company"
-    } else if (login === 'privateUser' && password === 'privatePassword') {
-      window.location = "/private"
-    } else if (login === 'organizationUser' && password === 'organizationPassword') {
-      window.location = "/organization"
-    } else {
-      alert('Check credentials');
+    for (var i=0; i<this.state.users.length; i++) {
+      const _user = this.state.users[i];
+      if (_user.login === user.login && _user.password === user.password) {
+        changeLocation = true;
+        window.location = _user.location;
+      }
     }
 
+    if (!changeLocation) {
+      alert('Check credentials');
+    }
   }
 
   render() {
+    if (!this.state) {
+      return <Loader></Loader>;
+    }
     return (
       <div className="login-view">
         <Header></Header>
