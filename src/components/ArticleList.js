@@ -23,7 +23,7 @@ class ArticleList extends Component {
   render() {
     return (
       <div>
-        <div className="header-list header-border">
+        <div className="header-list header-border box">
           <div>Date</div>
           <div>Article type</div>
           <div>Value</div>
