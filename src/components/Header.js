@@ -5,9 +5,6 @@ import './Header.css';
 
 import cookie from 'cookie';
 
-console.log(cookie.parse(document.cookie));
-console.log(cookie.parse(document.cookie).loginName);
-
 const Header = (props) => (
   <header className="Header">
     <h1><Link to='/'>Happy Helping</Link></h1>
