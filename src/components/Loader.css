@@ -3,7 +3,7 @@
 .loader {
   font-size: 20px;
   position: relative;
-  width: 4em;
+  left: -3em;
   height: 1em;
   margin: 100px auto;
 }
