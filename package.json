@@ -1,0 +1,28 @@
+{
+  "name": "hackyeah",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "cookie": "^0.3.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "ga": "^0.0.2",
+    "jquery": "^3.2.1",
+    "node-json-db": "^0.7.3",
+    "normalize.css": "^7.0.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-google-maps": "^9.2.1",
+    "react-intl": "^2.4.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.14"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "api": "node app/app.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

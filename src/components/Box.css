@@ -1,0 +1,173 @@
+.Box {
+  text-align: center;
+  background: linear-gradient(#4dbc81, #53a378);
+  border-radius: 10px;
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/*
+.Box-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+*/
+
+.large {
+  width: 100%;
+  flex-direction: row;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.small {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.medium {
+  flex-direction: row;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.large h2 {
+  width: 100%;
+}
+
+.large div {
+  min-width: 150px;
+}
+.map > div {
+  width: 100%;
+}
+
+.large footer {
+  width: 100%;
+}
+
+.color-a {
+  background: linear-gradient(#d13140, #a02029);
+}
+
+.color-a .Box-footer .Box-button a, .color-a .Box-footer .Box-button {
+  color: #d13140;
+}
+
+.color-b {
+  background: linear-gradient(#21cdfc, #00abdb);
+}
+
+.color-b .Box-footer .Box-button a, .color-b .Box-footer .Box-button {
+  color: #21cdfc;
+}
+
+.color-c {
+  background: linear-gradient(#fda82c, #ca971b);
+}
+
+.color-c .Box-footer .Box-button a, .color-c .Box-footer .Box-button a {
+  color: #fda82c;
+}
+
+.color-d {
+  background: linear-gradient(#4dbc81, #53a378);
+}
+
+.color-d .Box-footer .Box-button a, .color-d .Box-footer .Box-button a {
+  color: #4dbc81;
+}
+
+.Box-header {
+  width: 100%;
+  text-align: center;
+  color: white;
+  order: 1;
+}
+
+.Box-content {
+  width: 100%;
+  order: 2;
+}
+
+.Box-image {
+  font-size: 1.5em;
+}
+
+.Box-footer {
+  display: flex;
+  width: 100%;
+  order: 3;
+}
+
+  .Box-footer .Box-button {
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    background-color: rgba(0,0,0, 0.15);
+    width: 50%;
+    border-radius: 10px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+
+    box-shadow: 0 9px 0 rgba(0,0,0, .3);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(222, 222, 222, 1);
+    top:0;
+    transition: all .3s;
+    border: none;
+    outline: none;
+}
+
+
+  .Box-footer .Box-button:active{
+      box-shadow: 0 4px 0 rgba(0,0,0, .3);
+      top:8px;
+  }
+
+.Box-footer .Box-button:hover{
+  cursor: pointer;
+  background-color: white;
+}
+
+.donate-view .Box-footer {
+  display: flex;
+  justify-content: center;
+}
+
+
+.donate-view .donate-buttons .Box-button {
+  display: inline-block;
+  margin: 10px;
+  max-width: 40%;
+}
+
+img {
+  border-radius: 10px;
+}
+
+@keyframes Box-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes button-darken {
+  from {
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    background-color: rgba(0,0,0, 0.15);
+  } to {
+    border: 2px solid rgba(0, 0, 0, 0.0);
+    background-color: rgba(0,0,0, 0.3);
+  }
+}
