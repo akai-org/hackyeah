@@ -1,0 +1,29 @@
+[
+  {
+    "articleType":"money",
+    "moneyValue":"10",
+    "foodName":"",
+    "foodWeight":"",
+    "clothesName":"",
+    "quantity":"",
+    "date":"2017-10-28T22:11:37.303Z"
+  },
+  {
+    "articleType":"food",
+    "moneyValue":"",
+    "foodName":"pasta",
+    "foodWeight":"150",
+    "clothesName":"",
+    "quantity":"",
+    "date":"2017-10-28T22:11:53.200Z"
+  },
+  {
+    "articleType":"clothes",
+    "moneyValue":"",
+    "foodName":"",
+    "foodWeight":"",
+    "clothesName":"trousers",
+    "quantity":"10",
+    "date":"2017-10-28T22:12:13.469Z"
+  }
+]

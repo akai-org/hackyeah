@@ -93,51 +93,51 @@ const Home = () => (
 
     <Box variant="small color-c">
       <header className="Box-header">
-        <h2>Klikaj i pomagaj, każdego dnia</h2>
+        <h2>Help daily with a single click</h2>
       </header>
       <main className="Box-content">
         <img src="/images/calendar.png" alt="" />
         <p>
-          Pomagaj również przez inne inicjatywy
+          You can also help by other activities.
         </p>
       </main>
       <footer className="Box-footer">
         <div className="Box-button">
-          <a href="https://www.siepomaga.pl/s/klikaj">Dowiedz się więcej</a>
+          <a href="https://www.siepomaga.pl/s/klikaj">Click</a>
         </div>
       </footer>
     </Box>
 
     <Box variant="small color-a">
       <header className="Box-header">
-        <h2>Zgłoś organizację</h2>
+        <h2>Sign up your organisation</h2>
       </header>
       <main className="Box-content">
         <img src="/images/money.png" alt="" />
         <p>
-          Znasz ogranizację, której jeszcze nie pomagamy? <br/>
+          Do you know an organisation we don't already have in our database?<br/>
         </p>
       </main>
       <footer className="Box-footer">
         <div className="Box-button">
-          <a href="#">Zgłoś organizację</a>
+          <a href="#">Sign up</a>
         </div>
       </footer>
     </Box>
 
     <Box variant="small color-d">
       <header className="Box-header">
-        <h2>Chcesz dorzucić swoją cegiełkę?</h2>
+        <h2>Do you want to make a contribution?</h2>
       </header>
       <main className="Box-content">
         <img src="/images/brick.png" alt="" />
         <p>
-          Każda pomoc się liczy, a razem możemy więcej
+          Any help will do!
         </p>
       </main>
       <footer className="Box-footer">
         <div className="Box-button">
-          <a href="#">Zgłoś</a>
+          <a href="#">Help</a>
         </div>
       </footer>
     </Box>

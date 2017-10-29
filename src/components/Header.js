@@ -10,7 +10,7 @@ console.log(cookie.parse(document.cookie).loginName);
 
 const Header = (props) => (
   <header className="Header">
-    <h1><Link to='/'>Help</Link></h1>
+    <h1><Link to='/'>Happy Helping</Link></h1>
     <nav>
       { cookie.parse(document.cookie).loginName ? <Link to='/logout'>Logout</Link> : <Link to='/login'>Login</Link> }
     </nav>
