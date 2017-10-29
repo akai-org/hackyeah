@@ -60,9 +60,9 @@ class DonutClicker extends Component {
       document.getElementById('super-donut').classList.toggle("active");
     }
 
-    // const sound = document.getElementById("audio1");
     const sounds = document.getElementsByClassName("sound");
-    sound.play();
+    const index = Math.floor((Math.random()*1000) % 6);
+    sounds[index].play();
 
     document.cookie = cookie.serialize('donutGame', JSON.stringify({
       points: this.points
@@ -71,7 +71,12 @@ class DonutClicker extends Component {
   render() {
     return (
       <div className="clicker-view">
-      <audio className="sound" src="/nomnom.mp3" autostart="false" ></audio>
+      <audio className="sound" src="/nom1.wav" autostart="false" ></audio>
+      <audio className="sound" src="/nom2.wav" autostart="false" ></audio>
+      <audio className="sound" src="/nom3.wav" autostart="false" ></audio>
+      <audio className="sound" src="/nom4.wav" autostart="false" ></audio>
+      <audio className="sound" src="/nom5.wav" autostart="false" ></audio>
+      <audio className="sound" src="/nom6.wav" autostart="false" ></audio>
       
       <Header/>
 
