@@ -40,12 +40,12 @@ class Stats extends React.Component {
 
         <div>
           <img src="/images/earth.png" alt=""/>
-          <p><span className="count">2500</span> fed people</p>
+          <p><span className="count">{this.state.second}</span> fed people</p>
         </div>
 
         <div>
           <img src="/images/clothes.png" alt=""/>
-          <p><span className="count">6000</span> relayed clothes</p>
+          <p><span className="count">{this.state.third}</span> relayed clothes</p>
         </div>
         <footer>Thank you very much</footer>
       </Box>
