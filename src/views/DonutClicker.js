@@ -60,7 +60,8 @@ class DonutClicker extends Component {
       document.getElementById('super-donut').classList.toggle("active");
     }
 
-    const sound = document.getElementById("audio1");
+    // const sound = document.getElementById("audio1");
+    const sounds = document.getElementsByClassName("sound");
     sound.play();
 
     document.cookie = cookie.serialize('donutGame', JSON.stringify({
@@ -70,8 +71,7 @@ class DonutClicker extends Component {
   render() {
     return (
       <div className="clicker-view">
-      <audio id="audio" style={{opacity: 0}} src="http://www.soundjay.com/button/beep-07.wav" autostart="false" ></audio>
-      <audio id="audio1" style={{opacity: 0}} src="/nomnom.mp3" autostart="false" ></audio>
+      <audio className="sound" src="/nomnom.mp3" autostart="false" ></audio>
       
       <Header/>
 
