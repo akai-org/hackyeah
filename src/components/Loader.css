@@ -1,15 +1,14 @@
 
 
 .loader {
+  left: 2em;
   font-size: 20px;
   position: relative;
-  left: -3em;
   height: 1em;
   margin: 100px auto;
 }
 
 .dot {
-  width: 1em !important;
   height: 1em;
   border-radius: 0.5em;
   background: #333;
@@ -54,4 +53,8 @@
   animation-name: reveal;
   animation-direction: reverse;
   background-color: #21cdfc;
+}
+
+.large div.dot {
+  min-width: 1em;
 }
