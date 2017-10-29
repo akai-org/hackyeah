@@ -16,8 +16,8 @@ class Login extends Component {
       .then( (users) => {
         return users.json();
       })
-      .then( (users) => {
-        this.setState({users: [].concat(users)});
+      .then( (_users) => {
+        this.setState({users: _users});
       })
       .catch( (err) => {
         console.log(err);
