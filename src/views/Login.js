@@ -29,13 +29,14 @@ class Login extends Component {
       login: document.getElementById('login').value,
       password: document.getElementById('password').value
     };
-    document.cookie = "loginName=" + user.login;
+    
     let changeLocation = false;
 
     for (var i=0; i<this.state.users.length; i++) {
       const _user = this.state.users[i];
       if (_user.login === user.login && _user.password === user.password) {
         changeLocation = true;
+        document.cookie = "loginName=" + user.login;
         window.location = _user.location;
       }
     }
