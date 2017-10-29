@@ -9,9 +9,6 @@ dataSeed(db);
 
 const cors = require('cors');
 app.use(cors());
-// app.get('/', function (req, res) {
-//   res.send('Hello World!');
-// });
 
 app.listen(3005, () => {
   console.log('Example app listening on port 3005!');
@@ -23,10 +20,10 @@ app.get('/api/stats', (req, res) => {
 
 app.get('/api/users', (req, res) => {
   res.json( db.get(`/app/users`));
-})
+});
 
 app.get('/api/users/:name', (req, res) => {
   res.json( db.get(`/app/users/${req.params.name}`));
-})
+});
 
 app.use(express.static('build'));
