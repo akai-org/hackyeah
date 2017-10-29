@@ -14,16 +14,17 @@ class Stats extends React.Component {
 
   componentWillMount() {
     fetch('http://localhost:3005/api/stats')
-      .then( (data) => {
+      .then((data) => {
         return data.json();
-      } )
-      .then( (data) => {
-        this.setState( () => { return data } );
-        console.log(this.state);
       })
-      .catch( (err) => {
+      .then((data) => {
+        this.setState(() => {
+          return data
+        });
+      })
+      .catch((err) => {
         console.log(err);
-      } );
+      });
   }
 
   render() {
@@ -55,7 +56,7 @@ class Stats extends React.Component {
 
   componentDidMount() {
     $('.count').each(function () {
-      $(this).prop('Counter',0).animate({
+      $(this).prop('Counter', 0).animate({
         Counter: $(this).text()
       }, {
         duration: 8000,
@@ -64,7 +65,7 @@ class Stats extends React.Component {
           $(this).text(Math.ceil(now));
         }
       });
-     });
+    });
   }
 }
 
