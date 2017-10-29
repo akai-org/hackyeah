@@ -4,6 +4,18 @@ import Header from '../components/Header';
 import LoginForm from '../components/LoginForm';
 
 class Login extends Component {
+  componentWillMount() {
+    fetch('http://localhost:3005/api/users')
+      .then( (data) => {
+        return data.json();
+      })
+      .then( (data) => {
+        this.setState( () => { return data } );
+      })
+      .catch( (err) => {
+        console.log(err);
+      } );
+  }
 
   submit() {
     const login = document.getElementById('login').value;
