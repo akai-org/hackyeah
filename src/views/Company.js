@@ -7,14 +7,36 @@ import Stats from '../components/Stats';
 import ArticleList from '../components/ArticleList';
 import cookie from 'cookie';
 
+import Loader from '../components/Loader';
+
 import ArticlesJson from '../resources/articleList.json';
 
 class Company extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.getCompany = this.getCompany.bind(this);
+  }
 
   componentWillMount() {
     this.getArticles();
     this.prepareArticles(this.articles);
-    // this.articlesData = articlesData;
+    this.getCompany();
+  }
+
+  getCompany() {
+    const $this = this;
+    fetch('http://localhost:3005/api/users/company')
+      .then( (user) => {
+        return user.json();
+      })
+      .then( (_user) => {
+        $this.setState({user: _user});
+        console.log($this.state);
+      })
+      .catch( (err) => {
+        console.log(err);
+      } );
   }
 
   getArticles() {
@@ -44,18 +66,21 @@ class Company extends Component {
   }
 
   render () {
+    if (!this.state || !this.state.user) {
+      return <Loader></Loader>
+    }
     return (
       <div className="company-view">
         <Header></Header>
     
         <Box variant="large color-b">
           <header className="Box-header">
-            <h2>companyName</h2>
+            <h2>{this.state.user.login}</h2>
           </header>
           <main className="Box-content">
             <img src="/images/.png" alt="" />
             <p>
-              Information about your company.
+              {this.state.user.description}
             </p>
           </main>
         </Box>
