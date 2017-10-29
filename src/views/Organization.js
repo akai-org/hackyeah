@@ -9,7 +9,6 @@ const Organization = () => (
 
     <Stats></Stats>
     <h2>Organization View</h2>
-    <div>Tuti futti</div>
 
   </div>
 );
