@@ -38,6 +38,9 @@ class DonutClicker extends Component {
       document.getElementById('super-donut').classList.toggle("active");
     }
 
+    const sound = document.getElementById("audio1");
+    sound.play();
+
     document.cookie = cookie.serialize('donutGame', JSON.stringify({
       points: this.points
     }));
@@ -45,7 +48,9 @@ class DonutClicker extends Component {
   render() {
     return (
       <div className="clicker-view">
-
+      <audio id="audio" style={{opacity: 0}} src="http://www.soundjay.com/button/beep-07.wav" autostart="false" ></audio>
+      <audio id="audio1" style={{opacity: 0}} src="https://freesound.org/people/PaulMorek/sounds/172138/nom_D_03.wav" autostart="false" ></audio>
+      
       <Header/>
 
       <Box variant="large color-c">
