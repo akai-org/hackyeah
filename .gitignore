@@ -131,4 +131,5 @@ typings/
 # dotenv environment variables file
 .env
 
+/db_1.json
 /db.json

@@ -6,10 +6,13 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../components/Clicker.css';
 
+import cookie from 'cookie';
+
 class DonutClicker extends Component {
   constructor(props) {
     super(props);
-    this.points = 0;
+    const oldDonut = JSON.parse(cookie.parse(document.cookie).donutGame || '{}') ;
+    this.points = oldDonut.points || 0;
     this.extraPoints = 1;
     this.donutRain = 10;
     this.superDonut = 100;
@@ -34,6 +37,10 @@ class DonutClicker extends Component {
     if (this.points >= this.superDonut) {
       document.getElementById('super-donut').classList.toggle("active");
     }
+
+    document.cookie = cookie.serialize('donutGame', JSON.stringify({
+      points: this.points
+    }));
   }
   render() {
     return (
@@ -42,7 +49,7 @@ class DonutClicker extends Component {
       <Header/>
 
       <Box variant="large color-c">
-          <h1 id="score">0</h1>
+          <h1 id="score">{this.points}</h1>
           <h1 id="extra-points" className="visible-one"></h1>
       </Box>
 

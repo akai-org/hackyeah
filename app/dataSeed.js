@@ -21,24 +21,4 @@ module.exports = (db) => {
     location: '/organization',
     description: 'Information about your organization.'
   });
-  // db.push('/app/users', [
-  //   {
-  //     login: 'companyUser',
-  //     password: 'companyPassword',
-  //     location: '/company',
-  //     description: 'Information about your company.'
-  //   },
-  //   {
-  //     login: 'privateUser',
-  //     password: 'privatePassword',
-  //     location: '/private',
-  //     description: 'Information about you.'
-  //   }, 
-  //   {
-  //     login: 'organizationUser',
-  //     password: 'organizationPassword',
-  //     location: '/organization',
-  //     description: 'Information about your organization.'
-  //   }
-  // ]);
 };
