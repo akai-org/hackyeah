@@ -43,17 +43,8 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-108804320-1');
-
-      setTimeout( function() { document.getElementById('donut-mama').addEventListener('click', function(){
-        gtag.trackEvent('send', {
-          hitType: 'event',
-          eventCategory: 'Donut',
-          eventAction: 'click',
-          eventLabel: 'HackYeah'
-        });
-      }) }, 2000 );
+      window.gtag = gtag;
     </script>
   </body>
 </html>

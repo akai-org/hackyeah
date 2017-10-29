@@ -166,6 +166,18 @@ class DonutClicker extends Component {
     </div>
   );
   }
+
+  componentDidMount() {
+    // if(!window.gtag) return;
+    // document.getElementById('donut-mama').addEventListener('click', function(){
+    //   window.gtag.trackEvent('send', {
+    //     hitType: 'event',
+    //     eventCategory: 'Donut',
+    //     eventAction: 'click',
+    //     eventLabel: 'HackYeah'
+    //   });
+    // })
+  }
 }
 
 export default DonutClicker;
