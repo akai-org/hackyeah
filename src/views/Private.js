@@ -9,7 +9,6 @@ const Private = () => (
 
     <Stats></Stats>
     <h2>Private User View</h2>
-    <div>Tuti futti</div>
 
   </div>
 );

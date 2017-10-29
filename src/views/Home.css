@@ -1,4 +1,4 @@
-.home-view, .company-view, .login-view, .donate-view, .private-view, .organization-view {
+.home-view, .company-view, .login-view, .donate-view, .private-view, .organization-view, .clicker-view {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
