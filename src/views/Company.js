@@ -102,16 +102,16 @@ class Company extends Component {
     
         <Box variant="small color-b">
           <header className="Box-header">
-            <h2>Share your clothes</h2>
+            <h2>Add new article</h2>
           </header>
           <main className="Box-content">
-            <img src="/images/clothes.png" alt="" />
-            <p>Or relay your unused clothes.</p>
+            <img src="/images/plus.png" alt="" />
+            <p>If you would to share any foods, things or money you can add those here.</p>
           </main>
           <footer className="Box-footer">
             <div className="Box-button">
-              <Link to='/clothes'>
-                Find on map
+              <Link to='/add-article'>
+                Add article
               </Link>
             </div>
           </footer>
