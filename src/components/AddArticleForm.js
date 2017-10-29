@@ -84,7 +84,7 @@ class AddArticleForm extends Component {
   render() {
     return (
       <div className="AddArticleForm">
-        <h2 className="title">Add Article View</h2>
+        <h2 className="title">Add New Article</h2>
         <Box>
           <form id="addArticleForm" name="addArticleForm">
             <div className="form-container">
