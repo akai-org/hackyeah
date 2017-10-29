@@ -25,3 +25,7 @@
 .donate-view img {
   max-width: 300px;
 }
+
+.sound {
+  opacity: 0;
+}

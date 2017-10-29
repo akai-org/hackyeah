@@ -79,6 +79,30 @@
   background-color: white;
   border-radius: 10px;
 }
+
+
+.shop div.locked img {
+  opacity: 0.3;
+}
+
+.shop div.available img {
+  opacity: 1;
+}
+
+
+.shop div.available:hover {
+  animation: get-smaller .5s;
+  transform: scale(0.971);
+}
+
+.shop div:hover {
+  cursor: pointer;
+}
+
+.shop div img {
+  max-height: 80px;
+  max-width: 80px;
+}
 /*
 .donut-container:hover .donut-image {
   transform:scale(0.95);
@@ -92,6 +116,19 @@
          transform: rotate(360deg);
      }
  }
+
+ @keyframes get-smaller {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.71);
+    }
+    100% {
+      transform: scale(0.971);
+    }
+
+}
 
 @keyframes click-animation-one {
   0% {
