@@ -5,6 +5,7 @@ import Box from '../components/Box';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../components/Clicker.css';
+import GoogleAnalytics from 'ga';
 
 import cookie from 'cookie';
 
@@ -20,6 +21,8 @@ class DonutClicker extends Component {
     var ua = "UA-108804320-1";
     var host = 'hackyeah.akai.org.pl';
     this.ga = new GoogleAnalytics(ua, host);
+    this.ga.trackPage('clicker');
+    console.log(this.ga);
   }
 
   clickDonut = () => {
@@ -31,7 +34,7 @@ class DonutClicker extends Component {
       this.initForce = true;
     }
 
-    this.ga('send', {
+    this.ga.trackEvent('send', {
       hitType: 'event',
       eventCategory: 'Donut',
       eventAction: 'click',
