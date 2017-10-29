@@ -21,4 +21,8 @@ app.get('/api/stats', (req, res) => {
   res.json( db.get(`/app/stats`) );
 });
 
+app.get('/api/users', (req, res) => {
+  res.json( db.get(`/app/users`));
+})
+
 app.use(express.static('build'));
