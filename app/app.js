@@ -19,6 +19,7 @@ app.get('/api/stats', (req, res) => {
 });
 
 app.get('/api/users', (req, res) => {
+  console.log( db.get(`/app/users`) );
   res.json( db.get(`/app/users`));
 });
 

@@ -32,8 +32,8 @@ class Login extends Component {
     
     let changeLocation = false;
 
-    for (var i=0; i<this.state.users.length; i++) {
-      const _user = this.state.users[i];
+    for (const prop in this.state.users) {
+      const _user = this.state.users[prop];
       if (_user.login === user.login && _user.password === user.password) {
         changeLocation = true;
         document.cookie = "loginName=" + user.login;

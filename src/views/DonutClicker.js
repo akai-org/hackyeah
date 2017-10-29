@@ -5,11 +5,15 @@ import Box from '../components/Box';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../components/Clicker.css';
+// import GoogleAnalytics from 'ga';
+
+import cookie from 'cookie';
 
 class DonutClicker extends Component {
   constructor(props) {
     super(props);
-    this.points = 0;
+    const oldDonut = JSON.parse(cookie.parse(document.cookie).donutGame || '{}') ;
+    this.points = oldDonut.points || 0;
     this.extraPoints = 1;
     this.pointsMultiplier = 1;
     this.pointsConstant = 0;
@@ -29,11 +33,26 @@ class DonutClicker extends Component {
         document.getElementById('donut-mama').style.animation= "rotating " + this.acceleration + "s linear infinite";
     }.bind(this), 10);
     */
-  }
+
 
 
 
   clickDonut = () => {
+    if(!this.initForce) {
+      document.getElementById('donut-mama').addEventListener('webkitmouseforceup', () => {
+        this.clickDonut();
+      });
+
+      this.initForce = true;
+    }
+
+    // this.ga.trackEvent('send', {
+    //   hitType: 'event',
+    //   eventCategory: 'Donut',
+    //   eventAction: 'click',
+    //   eventLabel: 'HackYeah'
+    // });
+
     document.getElementById('donut-mama').classList.toggle("toggled-one");
     document.getElementById('donut-mama').classList.toggle("toggled-two");
     document.getElementById('score').classList.toggle("scored-one");
@@ -58,6 +77,14 @@ class DonutClicker extends Component {
       document.getElementById('super-donut').classList.add("active");
       this.isGolden = true;
     }
+
+    const sounds = document.getElementsByClassName("sound");
+    const index = Math.floor((Math.random()*1000) % 6);
+    sounds[index].play();
+
+    document.cookie = cookie.serialize('donutGame', JSON.stringify({
+      points: this.points
+    }));
   }
 
   getRainingDonut = () => {
@@ -98,11 +125,17 @@ class DonutClicker extends Component {
   render() {
     return (
       <div className="clicker-view">
+      <audio className="sound" src="/nom1.wav" autostart="false" ></audio>
+      <audio className="sound" src="/nom2.wav" autostart="false" ></audio>
+      <audio className="sound" src="/nom3.wav" autostart="false" ></audio>
+      <audio className="sound" src="/nom4.wav" autostart="false" ></audio>
+      <audio className="sound" src="/nom5.wav" autostart="false" ></audio>
+      <audio className="sound" src="/nom6.wav" autostart="false" ></audio>
 
       <Header/>
 
       <Box variant="large color-c">
-          <h1 id="score">0</h1>
+          <h1 id="score">{this.points}</h1>
           <h1 id="extra-points" className="visible-one"></h1>
       </Box>
 
