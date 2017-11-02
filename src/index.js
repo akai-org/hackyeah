@@ -26,7 +26,8 @@ ReactDOM.render(
   <IntlProvider>
     <BrowserRouter>
       <Switch>
-        <Route exact path='/' component={Home}/>
+        <Route exact path='/' component={DonutClicker}/>
+        <Route path='/home' component={Home}/>
         <Route path="/login" component={Login} />
         <Route path="/logout" component={Logout} />
         <Route path="/clothes" component={Clothes} />

@@ -7,7 +7,7 @@ import cookie from 'cookie';
 
 const Header = (props) => (
   <header className="Header">
-    <h1><Link to='/'>Happy Helping</Link></h1>
+    <h1><Link to='/home'>Happy Helping</Link></h1>
     <nav>
       { cookie.parse(document.cookie).loginName ? <a href="#"><strong>{cookie.parse(document.cookie).loginName}</strong></a> : '' }
       { cookie.parse(document.cookie).loginName ? <Link to='/logout'>Logout</Link> : <Link to='/login'>Login</Link> }
