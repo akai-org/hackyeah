@@ -1,7 +1,6 @@
 {
   "name": "hackyeah",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "animate.css": "^3.5.2",
     "cookie": "^0.3.1",
